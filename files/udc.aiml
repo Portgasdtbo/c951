@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+        <pattern>*</pattern>
+        <template><delay>3</delay>“My apologies, I don’t understand, if you are confused or want to start over just say “Hello!”. </template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template><delay>1</delay>Hi! My name is Career Helper. What is your name? (My name is...)</template>
+    </category>
+    
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template><delay>4</delay>It's a pleasure to meet you <set name = "username"><star /></set>. My job is to help you find a career that best fits your interests. Would you like to begin? (Yes, No)</template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <template><delay>2</delay>That's perfectly fine.  I'll be here whenever you are ready! Just say "Hello" whenever you are ready to begin.</template>
+    </category>
+    
+    <category>
+        <pattern>YES</pattern>
+        <template><delay>3</delay>Great! I'm just going to ask you a few basic questions, and you just give me the whichever answer best fits with your interests.<delay>2</delay>So, would you say that you are a creative person?
+            <button>
+                <text>yes</text>
+                <postback>YESCREATIVE</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NOCREATIVE</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>START AGAIN</pattern>
+        <template><delay>1</delay>Let's give it another shot, ok?<delay>2</delay>So, would you say that you are a creative person?
+            <button>
+                <text>yes</text>
+                <postback>YESCREATIVE</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NOCREATIVE</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>YESCREATIVE</pattern>
+        <template>
+            <delay>2</delay>Me too! Would you say that you're good at problem solving?
+            <button>
+                <text>yes</text>
+                <postback>YESCREATIVEYESPROBSOLV</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>YESCREATIVENOPROBSOLV</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOCREATIVE</pattern>
+        <template>
+            <delay>2</delay>Not a problem! Would you say that you're good at problem solving?
+            <button>
+                <text>yes</text>
+                <postback>NOCREATIVEYESPROBSOLV</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NOCREATIVENOPROBSOLV</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>YESCREATIVEYESPROBSOLV</pattern>
+        <template>
+            <delay>2</delay>Awesome! Are you a people person?
+            <button>
+                <text>yes</text>
+                <postback>SOFTDEV</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>DATAADMIN</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>YESCREATIVENOPROBSOLV</pattern>
+        <template>
+            <delay>2</delay>Don't worry about that! Are you a people person?
+            <button>
+                <text>yes</text>
+                <postback>WEBDEV</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NETCOMPSYSTADMIN</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOCREATIVEYESPROBSOLV</pattern>
+        <template>
+            <delay>2</delay>Awesome! Are you a people person?
+            <button>
+                <text>yes</text>
+                <postback>INFOSECUANALYST</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>COMPNETARCH</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOCREATIVENOPROBSOLV</pattern>
+        <template>
+            <delay>2</delay>Don't worry about that! Are you a people person?
+            <button>
+                <text>yes</text>
+                <postback>COMPSUPPSPEC</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>NOTOALL</postback>
+            </button>
+        </template>
+    </category>
+    
+</aiml>

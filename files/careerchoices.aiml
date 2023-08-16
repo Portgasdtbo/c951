@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	    <pattern>SOFTDEV</pattern>
+	    <template>
+	        <delay>4</delay>You might want to look into Software Development! 
+	        Software Developers create software programs that allow users to perform specific tasks on various devices, such as computers or mobile devices. 
+	 
+	        (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATAADMIN</pattern>
+        <template>
+            <delay>4</delay>It sounds to me like becoming a Database Administrator would fit you nicely! 
+            Database administrators analyze and evaluate the data needs of users. 
+            They develop and improve the data resources used to store and retrieve critical information. 
+            
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEBDEV</pattern>
+        <template>
+            <delay>4</delay>You could look into becoming a Web Developer! 
+            Web Developers assess the needs of users for information-based resources. 
+            They create the technical structure for websites and make sure that web pages are accessible and easily downloadable through a variety of browsers and interfaces. 
+            
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NETCOMPSYSTADMIN</pattern>
+        <template>
+            <delay>4</delay>Maybe becoming a Network and Computer Systems Administrator is right for you! 
+            They are responsible for the day-to-day operation of computer networks. 
+            They work with the physical computer networs of a variety of organizations and therefore are employed in many different industries. 
+            
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>INFOSECUANALYST</pattern>
+        <template>
+            <delay>4</delay>Maybe you should consider becoming an Information Security Analyst! 
+            They create systems to protect information networks and websites from cyberattacks and other security breaches. 
+            They also need to anticipate future attacks by researching trends in data security. 
+            
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>COMPNETARCH</pattern>
+        <template>
+            <delay>4</delay>One option you should consider is becoming a Computer Network Architect! 
+            Computer network architects design, implement, and maintain networking and data communication systems, including local area networks, wide area networks, extranets, and intranets. 
+            They assess the needs of organizations for data sharing and communications. 
+            
+            (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>COMPSUPPSPEC</pattern>
+        <template>
+            <delay>4</delay>Maybe you could be a Computer Support Specialist! 
+            Computer support specialists provide help and advice to computer users and organizations. 
+            They need a good understanding of how a computer works and good people skills to properly help their clients. 
+             (If you would like to investigate other choices, just say "start again")
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NOTOALL</pattern>
+        <template>
+            <delay>4</delay>I would suggest getting a better understanding of your strengths and interests in the computer science industry. 
+            The variety of computer science jobs is as vast as that of computers themselves! 
+            Once you understand your own strengths and interests better, come back to me by saying "hello" and we will figure out something great for you.
+        </template>
+    </category>
+	
+
+</aiml>
